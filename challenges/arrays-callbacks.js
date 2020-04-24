@@ -94,11 +94,32 @@ console.log(result);
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
+function add(a, b) {
+    return a + b;
+}
+
+function multiply(a, b) {
+    return a * b;
+}
+
+function greeting(firstName, lastName) {
+    return `Hello, ${firstName} ${lastName}, nice to meet you!`;
+}
+
+function consumeTwo(cb1, cb2, cb3) {
+    console.log(cb1(2, 2));
+    console.log(cb2(3, 3));
+    console.log(cb3("Jamie", "Hyneman"));
+}
+
+consumeTwo(add, multiply, greeting);
+
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+console.log(consume(2, 2, add)); // 4
+console.log(consume(10, 16, multiply)); // 160
+console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+
 
 
 
@@ -106,6 +127,8 @@ console.log(result);
 /*
 
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
+
+    Done
 
 */
 
