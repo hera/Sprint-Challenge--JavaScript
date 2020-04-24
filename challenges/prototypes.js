@@ -8,7 +8,7 @@
 
 function CuboidMaker(length, width, height) {
     this.length = length;
-    this.width = height;
+    this.width = width;
     this.height = height;
 }
 
